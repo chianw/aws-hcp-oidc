@@ -1,5 +1,5 @@
 ## This example repository follows the tutorial described at https://www.hashicorp.com/en/blog/access-aws-from-hcp-terraform-with-oidc-federation
-In summary, this sets up OIDC federated credentials between a HCP workspace named *tfcloud-awss3* in a project named *demoproject1* in an organization named *redwidgets* in HCP and AWS. This is allowed to assume a role with S3 full access. 
+In summary, this sets up OIDC federated credentials between a HCP workspace named *tfcloud-awss3* in a project named *demoproject1* in an organization named *redwidgets* in HCP. This is allowed to assume a role with S3 full access. 
 
 ## HCP terraform login
 First create a user token on HCP Terraform portal https://app.terraform.io and copy the token. Next run **terraform login** on command line, following by pasting the token into CLI prompt for **terraform login** . Once this is done, the token is saved at /Users/myusername/.terraform.d/credentials.tfrc.json and will be used by the tfe provider
